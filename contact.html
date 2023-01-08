@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hazem Al-Hameed</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.tcontact {
+  position: absolute;
+  color: white;
+  height: 100%;
+  left: 0%;
+  width: 25%;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.contactway{
+    padding: 30px 70px;
+    font-size: x-large;
+}
+
+.contactway p a {
+    text-decoration: none;
+    color: white;
+}
+
+.contactway p a:hover{
+    color: rgb(0, 255, 42);
+    font-size: xx-large;
+}
+
+
+.fcontact {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  right: 0%;
+  text-align: center;
+  padding-top: 30px;
+}
+ 
+form{
+   padding:20px 100px 100px;
+}
+input{
+    width: 700px; 
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+textarea{
+    width: 700px; 
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+button{
+  
+  border: none;
+  cursor: pointer;
+  padding: 10px 40px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+
+}
+
+button::after,
+button::before {
+  transition: all 0.2s ease-in-out;
+}
+
+:root {
+      --btn3-a: hsl(137, 96%, 59%);
+}
+
+.btn {
+  background-color: var(--btn3-a);
+  border: 2px solid var(--btn3-a);
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--btn3-a);
+
+  box-shadow: 0 0 15px var(--btn3-a), inset 0 0 10px var(--btn3-a);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+                    <li><a href="add.html">Additional page</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="paner1">
+        <h1 class="textpaner">keep in touch with me!</h1>
+      </div>
+      <div class="container">
+      <div class="tcontact">
+        <div class="contactway">
+                <h4>Call:</h4>
+                <p><del>0787155653</del></p>
+                <p> <a href="tel:00962778083610">0790076439</a></p></div>
+        <div class="contactway"><h4>Email:</h4>
+                <p><a href="mailto:contact@example.com">hazemalhameed@gmail.com</a></p></div>
+        <div class="contactway"><h4>Location:</h4>
+                <p><a href="#">JORDAN-Zarqa</a></p></div>
+      </div>
+      <div class="fcontact">
+        <from>
+          <input type="text" placeholder="your name"/> <br>
+          <input type="email" placeholder="your email"/><br>
+          <textarea placeholder="your message"></textarea><br>
+          <button class="btn">submit</button>
+        </from>
+      </div>
+    </div>
+    
+    </main>
+  </body>
+</html>
